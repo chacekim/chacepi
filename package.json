@@ -1,0 +1,20 @@
+{
+  "name": "chacepi",
+  "version": "0.0.0",
+  "description": "Javascript powered RaspberryPi with Web Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chacekim/chacepi.git"
+  },
+  "author": "Chace Kim",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "d4a3efdbc46d4853d1a4503a573f5a2e0f8964de",
+  "dependencies": {
+    "onoff": "~1.0.3"
+  }
+}
