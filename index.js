@@ -1,13 +1,10 @@
-var express = require('express');
-var app = express();
+var http = require('http');
 
-app.get('/', function(req, res) {
-  res.send('Welcome to Chacepi Web Interface');
-});
+http.createServer(function(req, res) {
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+	res.writeHead(200, {
+		'Content-Type' : 'text/plain'
+	});
+	res.end('Hello World\n');
 
-  console.log("Example app listening at http://%s:%s", host, port);
-});
+}).listen(1337, '127.0.0.1');
