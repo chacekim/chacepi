@@ -16,6 +16,7 @@
   "gitHead": "d4a3efdbc46d4853d1a4503a573f5a2e0f8964de",
   "dependencies": {
     "express": "^4.13.3",
-    "onoff": "~1.0.3"
+    "onoff": "~1.0.3",
+    "sockjs": "^0.3.15"
   }
 }
