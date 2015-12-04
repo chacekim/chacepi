@@ -13,12 +13,12 @@ router.get('/led', function(req, res, next) {
 });
 
 router.get('/led/on', function(req, res, next) {
-  console.log('LED is turned on');
+  console.log('LED is turned ON');
   pin.led.writeSync(1);
   res.render('on');
 });
 
-router.get('/led/off/', function(req, res, next) {
+router.get('/led/off', function(req, res, next) {
   console.log('LED is turned OFF');
   pin.led.writeSync(0);
   res.render('off');
