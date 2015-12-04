@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var pin = require('./pin');
+var pin = require('../pin');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
