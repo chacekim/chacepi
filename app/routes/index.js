@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/led', function(req, res, next) {
+  console.log('This is where you can control LED with Web Interface');
   res.render('led', { myVar: 'Yo' });
 });
 
