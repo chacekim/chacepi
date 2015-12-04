@@ -7,6 +7,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/iot', function(req, res, next) {
+  res.render('iot');
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('about');
+});
+
 router.get('/led', function(req, res, next) {
   console.log('This is where you can control LED with Web Interface');
   res.render('led', { title: 'Express' });
