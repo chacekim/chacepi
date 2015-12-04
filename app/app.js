@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var Gpio = require('onoff').Gpio;
 
-var routes = require('./routes/index');
+var routes = require('./routes/led');
 var users = require('./routes/users');
 
 var app = express();
