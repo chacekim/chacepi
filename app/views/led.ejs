@@ -1,9 +1,15 @@
 <%- include('partials/header.ejs'); %>
 <main class="container">
 	<h2>LED Control Panel</h2>
-	<ul>
-		<li><a href="/led/on">Turn LED ON</a></li>
-		<li><a href="/led/off">Turn LED OFF</a></li>
-	</ul>
+	<p>Here is where you can command ChacePi to toggle LED with its GPIO.</p>
+	<div class="row switches">
+		<div class="col-md-6">
+			<a href="/led/on"><span class="glyphicon glyphicon-lamp"></span>Turn LED ON</a>
+		</div>
+		<div class="col-md-6">
+			<a href="/led/off"><span class="glyphicon glyphicon-off"></span>Turn LED OFF</a>
+		</div>
+	</div>
+	
 </main>
 <%- include('partials/footer.ejs'); %>

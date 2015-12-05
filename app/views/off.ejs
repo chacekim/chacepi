@@ -1,7 +1,15 @@
 <%- include('partials/header.ejs'); %>
 <main class="container">
-	<h3>LED is OFF</h3>
-	<a href="/led">To control LED</a>
-	<a href="/led/on">Turn LED ON</a>
+	<h2>LED Control Panel</h2>
+	<p>LED is currently OFF</p>
+	<div class="row switches">
+		<div class="col-md-6">
+			<a href="/led/on"><span class="glyphicon glyphicon-lamp"></span>Turn LED ON</a>
+		</div>
+		<div class="col-md-6 active">
+			<a href="/led/off"><span class="glyphicon glyphicon-off"></span>Turn LED OFF</a>
+		</div>
+	</div>
+	
 </main>
 <%- include('partials/footer.ejs'); %>

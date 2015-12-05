@@ -1,8 +1,110 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: white;
+	font-family: 'Droid Sans Mono' ;
+}
+.orange {
+	color: #FF8D1F;
 }
 
+.orange-bg {
+	background-color: #FF8D1F;
+}
+
+.blue {
+	color: #0084BD;
+}
+
+.blue-bg {
+	background-color: #0084BD;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.space-around {
+	justify-content: space-around;
+	align-items: center;
+}
+
+
 a {
-  color: #00B7FF;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	margin-top: 25px;
+}
+
+header .navbar {
+	border-radius: 0px;
+	border: none;
+}
+
+header .navbar-default {
+	background-color: white;
+}
+
+header .navbar-default .navbar-brand {
+	color: #0084BD;
+}
+
+header .navbar-default .navbar-nav li a {
+	color: #0084BD;
+}
+
+.switches {
+	margin: 30px 20px;
+}
+
+.switches > div {
+	background-color: white;
+	color: #0084BD;
+}
+
+.switches > .col-md-6 {
+	width: 45%;
+	margin: 0% 2%;
+	display: inline-block;
+}
+
+div.col-md-6.active {
+	background-color: #00ABBD;
+}
+
+div.col-md-6.active > a {
+	color: white;
+}
+
+.switches div:hover {
+	background-color: #00ABBD;
+	color: white;
+}
+
+.switches > div > a {
+	display: block;
+	padding: 50px 0px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.switches > div > a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.switches > div > a > span {
+	margin-right: 15px;
 }
