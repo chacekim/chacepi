@@ -1,6 +1,10 @@
 body {
 	color: white;
-	font-family: 'Droid Sans Mono' ;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Nunito', sans-serif;
 }
 .orange {
 	color: #FF8D1F;
@@ -107,4 +111,24 @@ div.col-md-6.active > a {
 
 .switches > div > a > span {
 	margin-right: 15px;
+}
+
+.timer {
+	margin-top: 30px;
+	color: #00ABBD;;
+}
+
+.timer > input {
+	color: #00ABBD;
+}
+
+.timer a.btn-default {
+	border: none;
+	border-radius: 0px;
+	color: #0084BD;
+}
+
+a.btn-default:hover {
+	background-color: #00ABBD!important;
+	color: white;
 }
