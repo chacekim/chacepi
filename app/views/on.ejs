@@ -1,7 +1,7 @@
 <%- include('partials/header.ejs'); %>
 <main class="container">
 	<h2>LED Control Panel</h2>
-	<p>LED is currently ON</p>
+	<h3 class="text-center" style="margin:30px;">LED is currently ON</h3>
 	<div class="row switches flex-container space-around">
 		<div class="col-md-6 active">
 			<a href="/led/on"><span class="glyphicon glyphicon-lamp"></span>Turn LED ON</a>
@@ -9,6 +9,9 @@
 		<div class="col-md-6">
 			<a href="/led/off"><span class="glyphicon glyphicon-off"></span>Turn LED OFF</a>
 		</div>
+	</div>
+	<div class="row flex-container" style="justify-content:center;">
+		<img src="/images/light_on.png" alt="" class="bulb">
 	</div>
 	
 </main>

@@ -1,7 +1,7 @@
 <%- include('partials/header.ejs'); %>
 <main class="container">
 	<h2>LED Control Panel</h2>
-	<p>Here is where you can command ChacePi to toggle LED with its GPIO.</p>
+	<h3>Here is where you can command ChacePi to toggle LED with its GPIO.</h3>
 	<div class="row switches flex-container space-around">
 		<div class="col-md-6">
 			<a href="/led/on"><span class="glyphicon glyphicon-lamp"></span>Turn LED ON</a>
@@ -13,17 +13,25 @@
 
 	
 	<h2>Set On/Off Timer</h2>
-	<p>You can set individual times for both ON and OFF</p>
-	<div class="row timer flex-container" style="justify-content:space-around;align-items:center;">
+	<h3>You can set individual times for both ON and OFF</h3>
+	<div class="row timer flex-container" style="justify-content:space-between;align-items:center;margin-bottom:50px;">
 		<div class="ontimer">
 			<input type="text" placeholder="ON time" style="border:none;padding:20px;">
 			<a href="" class="btn btn-default" style="padding: 20px 15px;">Set Time</a>
 		</div>
 		<div class="offtimer">
-			<input type="text"placeholder="OFF time" style="border:none;padding:20px	;">
+			<input type="text"placeholder="OFF time" style="border:none;padding:20px;">
 			<a href="" class="btn btn-default" style="padding: 20px 15px;">Set Time</a>
 		</div>
 	</div>
-	
+	<h2>Current Set Time</h2>
+	<div class="row currentTime flex-container" style="justify-content:space-between;align-items:center;">
+		<div class="onTime">
+			<label for="onTime">ON at : <h3 style="display:inline-block;">00:00</h3></label>
+		</div>
+		<div class="offTime">
+			<label for="offTime">OFF at : <h3 style="display:inline-block;">00:00</h3></label>
+		</div>
+	</div>
 </main>
 <%- include('partials/footer.ejs'); %>

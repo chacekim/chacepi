@@ -69,8 +69,16 @@ header .navbar-default .navbar-nav li a {
 	color: #0084BD;
 }
 
+header .navbar-default .navbar-header a:hover {
+	color: #00ABBD;
+}
+
+header .navbar-default .navbar-nav li a:hover {
+	color: #00ABBD;
+}
+
 .switches {
-	margin: 30px 20px;
+	margin: 70px 20px;
 }
 
 .switches > div {
@@ -131,4 +139,9 @@ div.col-md-6.active > a {
 a.btn-default:hover {
 	background-color: #00ABBD!important;
 	color: white;
+}
+
+img.bulb {
+	-webkit-filter: invert(1.0);
+	filter: invert(1.0);
 }
