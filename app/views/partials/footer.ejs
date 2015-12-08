@@ -1,4 +1,32 @@
+	<footer class="container">
+		<h3>To get in touch</h3>
+		<ul class="social" style="padding-left:0;">
+			<li><a href=""><img src="/images/facebook.png" alt=""></a></li>
+			<li><a href=""><img src="/images/twitter.png" alt=""></a></li>
+			<li><a href=""><img src="/images/instagram.png" alt=""></a></li>
+			<li><a href=""><img src="/images/linked.png" alt=""></a></li>
+		</ul>
+		<p>Developed by Chace Kim Copyright 2015</p>
+	</footer>
+
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+	function startTime() {
+	    var today = new Date();
+	    var h = today.getHours();
+	    var m = today.getMinutes();
+	    var s = today.getSeconds();
+	    m = checkTime(m);
+	    s = checkTime(s);
+	    document.getElementById('txt').innerHTML =
+	    h + ":" + m + ":" + s;
+	    var t = setTimeout(startTime, 500);
+	}
+	function checkTime(i) {
+	    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	    return i;
+	}
+	</script>
 </body>
 </html>

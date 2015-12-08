@@ -17,7 +17,7 @@ router.get('/about', function(req, res, next) {
 
 router.get('/led', function(req, res, next) {
   console.log('This is where you can control LED with Web Interface');
-  res.render('led', { title: 'Express' });
+  res.render('led');
 });
 
 router.get('/led/on', function(req, res, next) {

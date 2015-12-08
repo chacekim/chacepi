@@ -1,7 +1,14 @@
 <%- include('partials/header.ejs'); %>
 <main class="container">
 	<h2>LED Control Panel</h2>
-	<h3>Here is where you can command ChacePi to toggle LED with its GPIO.</h3>
+	<h3>Here is where you can command ChacePi to toggle LED with its GPIO</h3>
+	<p>Click the buttons below to turn LED on or off</p>
+	<div class="status">
+		<label for="">
+			STATUS: 
+			<div id="ledStatus" class="off"></div>
+		</label>
+	</div>
 	<div class="row switches flex-container space-around">
 		<div class="col-md-6">
 			<a href="/led/on"><span class="glyphicon glyphicon-lamp"></span>Turn LED ON</a>
@@ -14,23 +21,28 @@
 	
 	<h2>Set On/Off Timer</h2>
 	<h3>You can set individual times for both ON and OFF</h3>
+	<p>Format -> HH:MM:SS eg. 13:55:00</p>
 	<div class="row timer flex-container" style="justify-content:space-between;align-items:center;margin-bottom:50px;">
 		<div class="ontimer">
-			<input type="text" placeholder="ON time" style="border:none;padding:20px;">
+			<input type="text" placeholder="ON time" style="border:none;padding:20px;" id="onTime">
 			<a href="" class="btn btn-default" style="padding: 20px 15px;">Set Time</a>
 		</div>
 		<div class="offtimer">
-			<input type="text"placeholder="OFF time" style="border:none;padding:20px;">
+			<input type="text"placeholder="OFF time" style="border:none;padding:20px;" id="offTime">
 			<a href="" class="btn btn-default" style="padding: 20px 15px;">Set Time</a>
 		</div>
 	</div>
 	<h2>Current Set Time</h2>
-	<div class="row currentTime flex-container" style="justify-content:space-between;align-items:center;">
-		<div class="onTime">
-			<label for="onTime">ON at : <h3 style="display:inline-block;">00:00</h3></label>
+	<div class="currentTime">
+		<h4 style="display: inline-block;">Current time is : </h4>
+		<span class="glyphicon glyphicon-time" style="margin-right:15px;margin-left:5px;font-size:1.3em;"></span><h3 id="txt" style="display: inline-block;"></h3>
+	</div>
+	<div class="row currentSetTime flex-container" style="justify-content:space-between;align-items:center;">
+		<div class="onSetTime">
+			<label for="onSetTime">ON at : <h3 style="display:inline-block;">00:00</h3></label>
 		</div>
-		<div class="offTime">
-			<label for="offTime">OFF at : <h3 style="display:inline-block;">00:00</h3></label>
+		<div class="offSetTime">
+			<label for="offSetTime">OFF at : <h3 style="display:inline-block;">00:00</h3></label>
 		</div>
 	</div>
 </main>
